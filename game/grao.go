@@ -27,5 +27,8 @@ func (g gun) Wield() bool {
 	return true
 }
 func main() {
-
+	sword := sword{attacker: attacker{attackpower: 100, bonus: 5}, twohanded: true}
+	gun := gun{attacker: attacker{attackpower: 90, bonus: 15}, bulletsremains: 10}
+	sword.Wield()
+	gun.Wield()
 }
